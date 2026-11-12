@@ -8,7 +8,7 @@ type Search = { type?: "employer" | "jobseeker" };
 
 export const Route = createFileRoute("/contact")({
   validateSearch: (s: Record<string, unknown>): Search =>
-    s.type === "employer" || s.type === "jobseeker" ? { type: s.type } : {},
+    s["type"] === "employer" || s["type"] === "jobseeker" ? { type: s["type"] } : {},
   head: () => ({
     meta: [
       { title: "Contact Us – HelloHire Bengaluru" },
