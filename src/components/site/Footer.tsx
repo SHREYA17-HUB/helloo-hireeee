@@ -6,7 +6,7 @@ import { Logo } from "./Logo";
 export function Footer() {
   return (
     <footer className="bg-ink text-ink-foreground">
-      <div className="container-x grid gap-12 py-20 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1.2fr_1.3fr]">
+      <div className="container-x grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1.2fr_1.3fr]">
         <div>
           <Logo className="h-14" />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-ink-foreground/60">
