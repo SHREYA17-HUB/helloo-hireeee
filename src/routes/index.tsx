@@ -25,7 +25,7 @@ function Home() {
       <section className="relative overflow-hidden bg-ink text-ink-foreground">
         <div className="absolute inset-0 grid-bg opacity-50" aria-hidden />
         <div className="absolute left-1/3 top-1/2 h-[30rem] w-[30rem] -translate-y-1/2 rounded-full bg-lime/10 blur-3xl" aria-hidden />
-        <div className="container-x relative grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.15fr_1fr]">
+        <div className="container-x relative grid items-center gap-10 py-12 md:py-16 lg:grid-cols-[1.15fr_1fr]">
           <div>
             <p className="eyebrow text-lime">Smart Hiring · Seamless Staffing · Faster Growth</p>
             <h1 className="mt-6 text-[2.6rem] font-extrabold leading-[1.02] sm:text-6xl xl:text-7xl">
@@ -73,8 +73,8 @@ function Home() {
       </section>
 
       {/* Intro */}
-      <section className="py-24">
-        <div className="container-x grid items-center gap-14 lg:grid-cols-2">
+      <section className="py-16">
+        <div className="container-x grid items-center gap-10 lg:grid-cols-2">
           <Reveal className="relative">
             <img src={team} alt="HelloHire team collaborating" loading="lazy" width={1280} height={960} className="aspect-[4/3] w-full rounded-[2rem] object-cover" />
             <div className="absolute -bottom-6 right-6 rounded-2xl bg-ink px-6 py-4 text-ink-foreground shadow-xl">
@@ -96,13 +96,13 @@ function Home() {
       </section>
 
       {/* Services */}
-      <section className="bg-paper py-24">
+      <section className="bg-paper py-16">
         <div className="container-x">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <SectionHead eyebrow="Our Services" title="Everything you need to hire — and get hired." />
             <Link to="/services" className="btn btn-ghost-dark self-start md:self-auto">All Services <ArrowRight size={18} /></Link>
           </div>
-          <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s, i) => (
               <Reveal key={s.title} delay={i * 70} className={i === 0 ? "lg:row-span-2" : ""}>
                 <article className={`group h-full p-8 ${i === 0 ? "rounded-3xl bg-ink text-ink-foreground" : "card-lux"}`}>
@@ -122,10 +122,10 @@ function Home() {
       </section>
 
       {/* Process */}
-      <section className="py-24">
+      <section className="py-16">
         <div className="container-x">
           <SectionHead eyebrow="Recruitment process" title={<>How We Make Hiring <span className="hl">Effortless.</span></>} sub="Post requirements, sit back and relax while our recruiter chain manages your hiring hassles." />
-          <ol className="relative mt-16 grid gap-8 lg:grid-cols-5 lg:gap-5">
+          <ol className="relative mt-12 grid gap-8 lg:grid-cols-5 lg:gap-5">
             <div className="absolute left-6 top-0 h-full w-px bg-border lg:left-0 lg:top-6 lg:h-px lg:w-full" aria-hidden />
             {PROCESS.map((s, i) => (
               <Reveal key={s.title} delay={i * 90}>
@@ -137,7 +137,7 @@ function Home() {
               </Reveal>
             ))}
           </ol>
-          <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {BENEFITS.map((b) => (
               <div key={b.title} className="rounded-2xl bg-lime-soft p-6">
                 <Check className="rounded-full bg-ink p-1 text-lime" size={26} />
@@ -150,13 +150,13 @@ function Home() {
       </section>
 
       {/* Expertise */}
-      <section className="bg-ink py-24 text-ink-foreground">
+      <section className="bg-ink py-16 text-ink-foreground">
         <div className="container-x">
           <Reveal className="max-w-3xl">
             <p className="eyebrow text-lime">Our expertise</p>
             <h2 className="mt-4 text-3xl font-extrabold md:text-5xl">Specialist hiring for every stage of growth.</h2>
           </Reveal>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-3xl bg-ink-foreground/10 md:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-3xl bg-ink-foreground/10 md:grid-cols-2 lg:grid-cols-5">
             {EXPERTISE.map((e, i) => (
               <div key={e.title} className="group bg-ink p-8 transition-colors hover:bg-ink-2">
                 <span className="font-display text-5xl font-extrabold text-ink-foreground/15 transition-colors group-hover:text-lime">0{i + 1}</span>

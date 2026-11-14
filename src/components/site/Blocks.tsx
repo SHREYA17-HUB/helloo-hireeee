@@ -9,7 +9,7 @@ export function PageHero({ eyebrow, title, children }: { eyebrow: string; title:
     <section className="relative overflow-hidden bg-ink text-ink-foreground">
       <div className="absolute inset-0 grid-bg opacity-60" aria-hidden />
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-lime/20 blur-3xl" aria-hidden />
-      <div className="container-x relative py-20 md:py-28">
+      <div className="container-x relative py-14 md:py-20">
         <p className="eyebrow text-lime">{eyebrow}</p>
         <h1 className="mt-5 max-w-4xl text-4xl font-extrabold leading-[1.05] md:text-6xl">{title}</h1>
         {children && <div className="mt-6 max-w-2xl text-lg text-ink-foreground/70">{children}</div>}
@@ -30,10 +30,10 @@ export function SectionHead({ eyebrow, title, sub, center }: { eyebrow: string; 
 
 export function Pillars() {
   return (
-    <section className="py-24 bg-paper">
+    <section className="py-16 bg-paper">
       <div className="container-x">
         <SectionHead eyebrow="Why choose HelloHire" title={<>Why Partner with <span className="hl">Hello Hire?</span></>} />
-        <div className="mt-14 grid gap-5 md:grid-cols-2">
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
               <div className="card-lux h-full p-8">
@@ -48,7 +48,7 @@ export function Pillars() {
           ))}
         </div>
         <Reveal>
-          <p className="mx-auto mt-14 max-w-3xl text-center text-xl font-semibold leading-relaxed">
+          <p className="mx-auto mt-10 max-w-3xl text-center text-xl font-semibold leading-relaxed">
             At Hello Hire, we are committed to reshaping the future of recruitment by offering transparent, data-driven,
             and result-oriented hiring solutions that drive business success and career growth.
           </p>
@@ -60,10 +60,10 @@ export function Pillars() {
 
 export function Testimonials() {
   return (
-    <section className="py-24">
+    <section className="py-16">
       <div className="container-x">
         <SectionHead eyebrow="Testimonials" title="See What Our Clients Are Saying" />
-        <div className="mt-14 grid gap-5 md:grid-cols-2">
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
           {TESTIMONIALS.map((t, i) => (
             <Reveal key={t.name} delay={i * 80}>
               <figure className={`h-full rounded-3xl p-8 ${i % 3 === 0 ? "bg-ink text-ink-foreground" : "card-lux"}`}>
@@ -89,7 +89,7 @@ export function Testimonials() {
 
 export function DualCta() {
   return (
-    <section className="py-24">
+    <section className="py-16">
       <div className="container-x grid gap-5 lg:grid-cols-2">
         <Reveal>
           <div className="relative h-full overflow-hidden rounded-3xl bg-ink p-10 text-ink-foreground md:p-14">

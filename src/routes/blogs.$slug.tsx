@@ -22,7 +22,7 @@ export const Route = createFileRoute("/blogs/$slug")({
       : [{ title: "Article not found – HelloHire" }, { name: "robots", content: "noindex" }],
   }),
   notFoundComponent: () => (
-    <div className="container-x py-32 text-center">
+    <div className="container-x py-20 text-center">
       <h1 className="text-3xl font-extrabold">Article not found</h1>
       <Link to="/blogs" className="btn btn-lime mt-6">Back to Blogs</Link>
     </div>
@@ -34,7 +34,7 @@ function Post() {
   const { post } = Route.useLoaderData();
   return (
     <>
-      <article className="container-x max-w-3xl py-20">
+      <article className="container-x max-w-3xl py-14">
         <Link to="/blogs" className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-foreground"><ArrowLeft size={16} />All Blogs</Link>
         <h1 className="mt-6 text-4xl font-extrabold leading-tight md:text-5xl">{post.title}</h1>
         <p className="mt-5 text-sm text-muted-foreground">

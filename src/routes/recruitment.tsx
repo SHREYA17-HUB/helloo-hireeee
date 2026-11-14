@@ -27,17 +27,17 @@ function Recruitment() {
       <PageHero eyebrow="Recruitment" title={<>How do we solve your <span className="text-lime">hiring problems?</span></>}>
         Post requirements, sit back and relax while our recruiter chain manages your hiring hassles.
       </PageHero>
-      <section className="py-20">
+      <section className="py-14">
         <div className="container-x grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map((b) => (
             <div key={b.title} className="card-lux p-7"><Check className="rounded-full bg-lime p-1" size={28} /><h3 className="mt-4 text-lg font-extrabold">{b.title}</h3><p className="mt-2 text-sm text-muted-foreground">{b.body}</p></div>
           ))}
         </div>
       </section>
-      <section className="bg-paper py-24">
+      <section className="bg-paper py-16">
         <div className="container-x">
           <SectionHead eyebrow="Process" title="How We Make Hiring Effortless." />
-          <ol className="mt-12 grid gap-4 lg:grid-cols-5">
+          <ol className="mt-10 grid gap-4 lg:grid-cols-5">
             {PROCESS.map((s, i) => (
               <li key={s.title} className="rounded-3xl bg-card p-6 shadow-sm">
                 <span className="font-display text-3xl font-extrabold text-lime [-webkit-text-stroke:1px_var(--ink)]">0{i + 1}</span>
@@ -48,10 +48,10 @@ function Recruitment() {
           </ol>
         </div>
       </section>
-      <section className="py-24">
+      <section className="py-16">
         <div className="container-x">
           <SectionHead eyebrow="Specialisations" title="Our staffing categories" />
-          <div className="mt-16 space-y-20">
+          <div className="mt-10 space-y-14">
             {SPECIALISATIONS.map((s, i) => (
               <Reveal key={s.slug}>
                 <article id={s.slug} className="grid scroll-mt-28 items-center gap-10 lg:grid-cols-2">

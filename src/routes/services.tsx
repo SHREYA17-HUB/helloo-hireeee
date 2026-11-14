@@ -22,7 +22,7 @@ function Services() {
       <PageHero eyebrow="Our Services" title={<>Join the Future of Hiring with <span className="text-lime">Hello Hire.</span></>}>
         For businesses, we make hiring effortless, efficient, and results-driven. For job seekers, we provide the best career opportunities.
       </PageHero>
-      <section className="py-24">
+      <section className="py-16">
         <div className="container-x space-y-5">
           {SERVICES.map((s, i) => (
             <Reveal key={s.title}>

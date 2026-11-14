@@ -47,7 +47,7 @@ function Contact() {
       <PageHero eyebrow="Contact Us" title={<>Let's Start a <span className="text-lime">Conversation.</span></>}>
         Whether you're looking for exceptional talent, exploring career opportunities or need recruitment support, we're here to help.
       </PageHero>
-      <section className="py-24">
+      <section className="py-16">
         <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.3fr]">
           <div className="grid content-start gap-4">
             {cards.map((c) => (
@@ -75,7 +75,7 @@ function Contact() {
           </form>
         </div>
       </section>
-      <section className="container-x pb-24">
+      <section className="container-x pb-16">
         <iframe title="HelloHire location map" src={CONTACT.mapEmbed} loading="lazy" className="h-[420px] w-full rounded-3xl border-0 grayscale" />
       </section>
       <a href={CONTACT.whatsappHref} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" className="fixed bottom-6 right-6 z-40 grid h-14 w-14 place-items-center rounded-full bg-lime text-ink shadow-xl transition hover:scale-110">
