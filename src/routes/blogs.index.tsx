@@ -20,7 +20,7 @@ function Blogs() {
   return (
     <>
       <PageHero eyebrow="Blogs" title={<>Reliable & Cost Efficient <span className="text-lime">Recruitment News.</span></>} />
-      <section className="py-24">
+      <section className="py-16">
         <div className="container-x grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {POSTS.map((p) => (
             <Link key={p.slug} to="/blogs/$slug" params={{ slug: p.slug }} className="card-lux group overflow-hidden">

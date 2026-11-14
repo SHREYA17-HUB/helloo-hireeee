@@ -48,10 +48,10 @@ function Recruitment() {
           </ol>
         </div>
       </section>
-      <section className="py-24">
+      <section className="py-16">
         <div className="container-x">
           <SectionHead eyebrow="Specialisations" title="Our staffing categories" />
-          <div className="mt-16 space-y-20">
+          <div className="mt-10 space-y-14">
             {SPECIALISATIONS.map((s, i) => (
               <Reveal key={s.slug}>
                 <article id={s.slug} className="grid scroll-mt-28 items-center gap-10 lg:grid-cols-2">
