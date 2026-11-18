@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Heart, Mail, MapPin, Phone } from "lucide-react";
 import { CONTACT, NAV, SPECIALISATIONS } from "@/lib/site";
 import { Logo } from "./Logo";
 
@@ -43,8 +43,20 @@ export function Footer() {
       </div>
       <div className="border-t border-ink-foreground/10">
         <div className="container-x flex flex-col gap-2 py-6 text-xs text-ink-foreground/50 sm:flex-row sm:justify-between">
-          <p>Copyright © {new Date().getFullYear()} HelloHire. All Rights Reserved.</p>
-          <p>Developed By: Hosting Baba</p>
+          <p>Copyright © {new Date().getFullYear()}, All Rights Reserved</p>
+          <p className="flex flex-wrap items-center gap-1.5">
+            <span>Made with</span>
+            <Heart size={14} className="fill-lime text-lime" aria-hidden="true" />
+            <span>by</span>
+            <a
+              href="https://webhostingbaba.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-lime hover:underline"
+            >
+              Hosting Baba
+            </a>
+          </p>
         </div>
       </div>
     </footer>
