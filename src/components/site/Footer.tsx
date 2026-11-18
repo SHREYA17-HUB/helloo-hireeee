@@ -52,7 +52,7 @@ export function Footer() {
               href="https://webhostingbaba.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-lime hover:underline"
+              className="font-semibold text-red hover:underline"
             >
               Hosting Baba
             </a>

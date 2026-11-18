@@ -81,6 +81,7 @@
   --color-ink-2: var(--ink-2);
   --color-ink-foreground: var(--ink-foreground);
   --color-paper: var(--paper);
+  --color-red: var(--red);
 }
 
 :root {
@@ -91,6 +92,7 @@
   --ink-2: oklch(0.2 0 0);
   --ink-foreground: oklch(0.97 0 0);
   --paper: oklch(0.97 0.005 120);
+  --red: oklch(0.66 0.22 25);
   --background: oklch(1 0 0);
   --foreground: oklch(0.13 0 0);
   --card: oklch(1 0 0);
